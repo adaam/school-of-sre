@@ -1,16 +1,24 @@
-# Command Line Basics
+# 命令列基礎教學
 
-## Lab Environment Setup
+## 設定實驗環境
+
+可以找一個網路上的 bash 直譯器，來執行課程範例中的所有指令，這會對之後在 Linux 實際操作的時候有幫助。
 
 One can use an online bash interpreter to run all the commands that are provided as examples in this course. This will also help you in getting a hands-on experience of various linux commands.
 
+[REPL](https://repl.it/languages/bash) 是其中一個網路上可以用來執行 Linux 指令的的 bash 直譯器，我們會使用這個網站來執行課程中所有的指令。
+
 [REPL](https://repl.it/languages/bash) is one of the popular online bash interpreters for running linux commands. We will be using it for running all the commands mentioned in this course.
 
-## What is a Command
+## 什麼是指令
+
+指令是一種程式，用來叫作業系統執行某個特殊工作，程式以檔案的形式儲存在 Linux 的檔案系統之中，也就是說，指令也是儲存在磁碟中的某個檔案。
 
 A command is a program that tells the operating system to perform
 specific work. Programs are stored as files in linux. Therefore, a
 command is also a file which is stored somewhere on the disk.
+
+有時候指令會從使用者那邊取得其他的參數，這些參數稱之為命令列參數，在 Linux 系統內，知道指令要如何使用是很重要的，而要知道指令如何使用也有很多種方法。幾乎所有指令都有某種文件，大多數指令會有 -h 或是 \--help 這種參數，用來顯示部份或全部有關指令使用的文件，不過在 Linux 中大家最常使用的文件系統還是所謂的 man pages，這名字是由說明頁 (manual pages) 簡化來的。
 
 Commands may also take additional arguments as input from the user.
 These arguments are called command line arguments. Knowing how to use
@@ -21,11 +29,16 @@ documentation, most commands will have a command-line argument -h or
 most popular documentation system in Linux is called man pages - short
 for manual pages.
 
+利用 \--help 來顯示有關於 ls 指令的文件
+
 Using \--help to show the documentation for ls command.
 
 ![](images/linux/commands/image19.png)
 
+## 檔案系統組織
 ## File System Organization
+
+Linux 的檔案系統是階層式的，或可以視為樹狀結構，
 
 The linux file system has a hierarchical (or tree-like) structure with
 its highest level directory called root ( denoted by / ). Directories
